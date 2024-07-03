@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .container{
+        height: 100vh;
+        display: grid;
+        border: 2px solid;
+        font-size: 20px;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+     }
+     .container> div{
+       background-color: rgb(239, 251, 8);
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+     .item1{
+      grid-column: 1/4;
+      background-color:chartreuse !important;
+     }
+     .item2{
+      background-color: rgb(253, 8, 183) !important;
+     }
+     .item3{
+      background-color: darkorange !important;
+     }
+     .item4{
+      background-color: rgb(0, 191, 255) !important;
+     }
+     .item5{
+      grid-column: 1/4;
+      background-color:yellow !important;
+     }
+    </style>
+</head>
+<body>
+  <center><h1><B><U>CSS GRID</U></B></h1></center>
+    <div class="container">
+    <div class="item1"><B>HEADER</B></div>
+    <div class="item2"><B>LEFT BODY</B></div>
+    <div class="item3"><B>MAIN BODY</B></div>
+    <div class="item4"><B>RIGHT BODY</B></div>
+    <div class="item5"><B>FOOTER</B></div>
+    </div>
+</body>
+</html>
